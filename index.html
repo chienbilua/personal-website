@@ -2,41 +2,140 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Trang giới thiệu cá nhân</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân của Chiến - Sinh viên Công nghệ Thông tin">
+    <title>Chiến - Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<script src="script.js"></script>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">C</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">Về tôi</a></li>
+                <li><a href="#projects" class="nav-link">Dự án</a></li>
+                <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Xin chào, tôi là Chiến</h1>
-        <p>Sinh viên Công nghệ Thông tin</p>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Xin chào, tôi là <span class="highlight">Chiến</span></h1>
+                <p class="hero-subtitle">Sinh viên Công nghệ Thông tin</p>
+                <p class="hero-description">Passionate về lập trình web và phát triển phần mềm</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Xem dự án</a>
+                    <a href="#contact" class="btn btn-secondary">Liên hệ tôi</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Section giới thiệu -->
-    <section id="about">
-        <h2>Giới thiệu</h2>
-        <p>
-            Tôi là sinh viên ngành Công nghệ Thông tin, có kiến thức nền tảng về
-            lập trình web và phát triển phần mềm.
-        </p>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Giới thiệu</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Tôi là sinh viên ngành Công nghệ Thông tin, có kiến thức nền tảng vững chắc về lập trình web, phát triển phần mềm và thiết kế giao diện người dùng. Tôi luôn đam mê học hỏi những công nghệ mới và áp dụng chúng vào các dự án thực tế.
+                </p>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-icon">◆</span>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">◆</span>
+                        <h3>Backend</h3>
+                        <p>Python, PHP, SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-icon">◆</span>
+                        <h3>Tools</h3>
+                        <p>Git, VS Code, Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Section dự án -->
-    <section id="projects">
-        <h2>Dự án</h2>
-        <ul>
-            <li>Website giới thiệu cá nhân</li>
-            <li>Dự án nhóm môn học</li>
-            <li>Ứng dụng web cơ bản</li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dự án</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">📱</div>
+                    <h3 class="project-title">Website giới thiệu cá nhân</h3>
+                    <p class="project-desc">Trang web portfolio cá nhân với thiết kế hiện đại và responsive design.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">👥</div>
+                    <h3 class="project-title">Dự án nhóm môn học</h3>
+                    <p class="project-desc">Ứng dụng quản lý được phát triển cùng đội nhóm trong môn học chuyên đề.</p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">⚙️</div>
+                    <h3 class="project-title">Ứng dụng web cơ bản</h3>
+                    <p class="project-desc">Các ứng dụng web nhỏ được tạo ra để thực hành và nâng cao kỹ năng lập trình.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-text">Bạn quan tâm? Hãy liên hệ với tôi qua các kênh dưới đây</p>
+                <div class="contact-links">
+                    <a href="mailto:chien@example.com" class="contact-link">📧 Email</a>
+                    <a href="#" class="contact-link">💼 LinkedIn</a>
+                    <a href="#" class="contact-link">🐙 GitHub</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 Chiến. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2026 Chiến. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
